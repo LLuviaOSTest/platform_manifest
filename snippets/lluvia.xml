@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- LLuvia additions -->
+  <project path="android" name="LLuviaOSTest/android" remote="LL-5.XL" />
+
+  <project path="art" name="LLuviaOSTest/android_art" remote="LL-5.XL" />
+
+  <project path="bionic" name="LLuviaOSTest/android_bionic" remote="LL-5.XL" />
+
+  <project path="build/make" name="LLuviaOSTest/android_build" remote="LL-5.XL" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="LLuviaOSTest/android_build_soong" remote="LL-5.XL" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="device/lineage/sepolicy" name="LLuviaOSTest/android_device_lluvia_sepolicy" remote="LL-5.XL" />
+
+  <project path="external/arm-optimized-routines" name="LLuviaOSTest/android_external_arm-optimized-routines" remote="LL-5.XL" />
+  <project path="external/jemalloc_new" name="LLuviaOSTest/android_external_jemalloc-new" remote="LL-5.XL" />
+  <project path="external/libjpeg-turbo" name="LLuviaOSTest/android_external_libjpeg-turbo" remote="LL-5.XL" />
+  <project path="external/libpng" name="LLuviaOSTest/android_external_libpng" remote="LL-5.XL" />
+  <project path="external/skia" name="LLuviaOSTest/android_external_skia" remote="LL-5.XL" />
+  <project path="external/sqlite" name="LLuviaOSTest/android_external_sqlite" remote="LL-5.XL" />
+
+  <project path="frameworks/av" name="LLuviaOSTest/android_frameworks_av" remote="LL-5.XL" />
+  <project path="frameworks/base" name="LLuviaOSTest/android_frameworks_base" remote="LL-5.XL" />
+  <project path="frameworks/native" name="LLuviaOSTest/android_frameworks_native" remote="LL-5.XL" />
+  <project path="frameworks/opt/net/ims" name="LLuviaOSTest/android_frameworks_opt_net_ims" remote="LL-5.XL" />
+  <project path="frameworks/opt/net/wifi" name="LLuviaOSTest/android_frameworks_opt_net_wifi" remote="LL-5.XL" />
+  <project path="frameworks/opt/telephony" name="LLuviaOSTest/android_frameworks_opt_telephony" remote="LL-5.XL" />
+  <project path="frameworks/support/lottie" name="LLuviaOSTest/android_frameworks_support_lottie" remote="LL-5.XL" />
+
+  <project path="hardware/interfaces" name="LLuviaOSTest/android_hardware_interfaces" remote="LL-5.XL" />
+  <project path="hardware/lineage/interfaces" name="LLuviaOSTest/android_hardware_lineage_interfaces" remote="LL-5.XL" />
+
+  <project path="libcore" name="LLuviaOSTest/android_libcore" remote="LL-5.XL" />
+
+  <project path="lineage-sdk" name="LLuviaOSTest/android_lineage-sdk" remote="LL-5.XL" />
+
+  <project path="packages/apps/Backgrounds" name="LLuviaOSTest/android_packages_apps_Backgrounds" remote="LL-5.XL" />
+  <project path="packages/apps/Contacts" name="LLuviaOSTest/android_packages_apps_Contacts" remote="LL-5.XL" />
+  <project path="packages/apps/Dialer" name="LLuviaOSTest/android_packages_apps_Dialer" remote="LL-5.XL" />
+  <project path="packages/apps/Launcher3" name="LLuviaOSTest/android_packages_apps_Launcher3" remote="LL-5.XL" />
+  <project path="packages/apps/LineageParts" name="LLuviaOSTest/android_packages_apps_LineageParts" remote="LL-5.XL" />
+  <project path="packages/apps/Messaging" name="LLuviaOSTest/android_packages_apps_Messaging" remote="LL-5.XL" />
+  <project path="packages/apps/OmniStyle" name="LLuviaOSTest/android_packages_apps_OmniStyle" remote="LL-5.XL" />
+  <project path="packages/apps/Settings" name="LLuviaOSTest/android_packages_apps_Settings" remote="LL-5.XL" />
+  <project path="packages/apps/SetupWizard" name="LLuviaOSTest/android_packages_apps_SetupWizard" remote="LL-5.XL" />
+  <project path="packages/apps/ThemePicker" name="LLuviaOSTest/android_packages_apps_ThemePicker" remote="LL-5.XL" />
+  <project path="packages/apps/Updater" name="LLuviaOSTest/android_packages_apps_Updater" remote="LL-5.XL" />
+  <project path="packages/apps/WallpaperPicker2" name="LLuviaOSTest/android_packages_apps_WallpaperPicker2" remote="LL-5.XL" />
+  <project path="packages/apps/lluviaMusic" name="LLuviaOSTest/android_packages_apps_lluviaMusic" remote="LL-5.XL" />
+  <project path="packages/apps/lluviaSettings" name="LLuviaOSTest/android_packages_apps_lluviaSettings" remote="LL-5.XL" />
+  <project path="packages/apps/PhoneCommon" name="LLuviaOSTest/android_packages_apps_PhoneCommon" remote="LL-5.XL" />
+  <project path="packages/inputmethods/LatinIME" name="LLuviaOSTest/android_packages_inputmethods_LatinIME" remote="LL-5.XL" />
+  <project path="packages/services/OmniJaws" name="LLuviaOSTest/android_packages_services_OmniJaws" remote="LL-5.XL" />
+  <project path="packages/services/Telecomm" name="LLuviaOSTest/android_packages_services_Telecomm" remote="LL-5.XL" />
+  <project path="packages/services/Telephony" name="LLuviaOSTest/android_packages_services_Telephony" remote="LL-5.XL" />
+
+  <project path="prebuilts/abi-dumps/vndk" name="LLuviaOSTest/android_prebuilts_abi-dumps_vndk" remote="LL-5.XL" />
+
+  <!-- Clang 9 version 9.0.8 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-5900059" name="LLuviaOSTest/android_prebuilts_clang_host_linux-x86_clang-5900059" remote="LL-5.XL" clone-depth="1" />
+  <!-- Clang 10 version 10.0.6 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-6364210" name="LLuviaOSTest/android_prebuilts_clang_host_linux-x86_clang-6364210" remote="LL-5.XL" clone-depth="1" />
+  <!-- Clang 11 version 11.0.1 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-6443078" name="LLuviaOSTest/android_prebuilts_clang_host_linux-x86_clang-6443078" remote="LL-5.XL" clone-depth="1" />
+
+  <project path="system/bt" name="LLuviaOSTest/android_system_bt" remote="LL-5.XL" />
+  <project path="system/core" name="LLuviaOSTest/android_system_core" remote="LL-5.XL" />
+  <project path="system/sepolicy" name="LLuviaOSTest/android_system_sepolicy" remote="LL-5.XL" />
+
+  <project path="vendor/addons" name="LLuviaOSTest/android_vendor_addons" remote="LL-5.XL" />
+  <project path="vendor/LL-5.XLOTA" name="LLuviaOSTest/android_vendor_lluviaOTA" remote="LL-5.XL" />
+  <project path="vendor/lineage" name="LLuviaOSTest/android_vendor_lluvia" remote="LL-5.XL" />
+</manifest>
